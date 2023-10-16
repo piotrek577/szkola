@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=	, initial-scale=1.0">
+    <title>Tabelki, tebeleczki i tabele</title>
+</head>
+<style>
+    td{width: 200px;}
+</style>
+<body>
+    <table border="1" align="center" width="400" height="200" cellpadding="10px" cellspacing="0">
+        <tr> 
+            <th>Środa</th>  
+            <th>Czwartek na na naa</th> 
+        </tr>
+        <tr> 
+            <td>I tak dalej</td>  
+            <td>NA NA NAAA</td> 
+        </tr>
+    </table>
+    <hr>
+    <table border="1" align="center" width="400" height="200" cellpadding="10px" cellspacing="0">
+        <tr> 
+            <td colspan="2" align="center">Środa</td>  
+            <!-- <td>Czwartek na na naa</td>  -->
+        </tr>
+        <tr> 
+            <td>I tak dalej</td>  
+            <td>NA NA NAAA</td> 
+        </tr>
+    </table>
+    <hr>
+    <table border="1" align="center" width="400" height="200" cellpadding="10px" cellspacing="0">
+        <tr> 
+            <td rowspan="2" align="center">Środa</td>  
+            <td>Czwartek na na naa</td> 
+        </tr>
+        <tr> 
+            <!-- <td>I tak dalej</td>   -->
+            <td>NA NA NAAA</td> 
+        </tr>
+    </table>    
+    <hr>
+    <table 
+        border="1" 
+        align="center" 
+        width="400" 
+        height="200" 
+        cellpadding="10px" 
+        cellspacing="0"
+        bgcolor="pink"
+        bordercolor="blue"
+    >
+    <caption><font face="Arial">Dni tygodnia</font></caption>
+        <tr> 
+            <td align="right">Środa</td>  
+            <td valign="top">Czwartek na na naa</td> 
+        </tr>
+        <tr bgcolor="magenta"> 
+            <td>I tak dalej</td>  
+            <td>NA NA NAAA</td> 
+        </tr>
+    </table>
+    <hr>
+    
+</body>
+</html>
