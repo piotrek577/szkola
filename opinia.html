@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post" enctype="text/plain">
+
+        <table width="400" style="margin: auto auto; border: 0;">
+            <tr>
+                <td align="center">Wyraź opinię o naszej stronie</td>
+            </tr>
+            <tr>
+                <td><hr style="width: 100%; margin: auto auto; border: 1px solid black;" ></td>
+            </tr>
+            <tr>
+                <td style="text-align:justify;">Wyraź opinię o naszej witrynie sieci web, naszych produktach, naszej organizacji oraz na dowolne inne tematy. Wszelkie komentarze i propozycje są mile widziane.</td>
+            </tr>
+            <tr>
+                <td><b>Jaki rodzaj komentarza chcesz wysłać?</b></td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="radio" name="rodzajkom" id="rodzaj1"><label for="rodzaj1">Skarga</label>
+                    <input type="radio" name="rodzajkom" id="rodzaj1"><label for="rodzaj1">Problem</label>
+                    <input type="radio" name="rodzajkom" id="rodzaj3"><label for="rodzaj3">Propozycja</label>
+                    <input type="radio" name="rodzajkom" id="rodzaj4" checked><label for="rodzaj4">Gratulacje</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Co chcesz skomentować?</b>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <select name="cokom" id="cokom">
+                        <option value="witryna">Witryna sieci Web</option>
+                        <option value="programiści">Nasz dział IT</option>
+                        <option value="hosting">Nasz hosting</option>
+                   </select>
+                   <span>inne:</span>
+                   <input type="text" name="cokominne" id="cokominne" list="lista">
+                   <datalist id="lista">
+                    <option>Poniedziałek</option>
+                    <option>Wtorek</option>
+                    <option>Środa</option>
+                </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Wprowadź swoje komentarze w miejscu poniżej:</b></td>
+            </tr>
+            <tr>
+                <td align="center"><textarea name="swoje" id="swoje" cols="30" rows="10" placeholder="Tu jest miejsce na twoje komentarze"></textarea></td>
+            </tr>
+            <tr>
+                <td><b>Poinformuj nas jak mamy się z tobą skontaktować:</b></td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <table>
+                        <tr>
+                            <td>Imię i nazwisko:</td>
+                            <td><input type="text" name="imie" ></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail</td>
+                            <td><input type="email" name="mail" ></td>
+                        </tr>
+                        <tr>
+                            <td>Telefon</td>
+                            <td><input type="tel" id="tele" placeholder="000-000-000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"></td>
+                        </tr>
+                        <tr>
+                            <td>Fax</td>
+                            <td><input type="tel" id="telefax" placeholder="+00-000-000-000" pattern="^\+[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{3}$"></td>
+                        </tr>
+                        
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="wazne" id="wazne"><span>Proszę o możliwie jak najszybszy kontakt w tej sprawie.</span></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Wyślij komentarz">
+                    <input type="reset" value="Wyczyść formularz">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>

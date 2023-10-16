@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dane osobowe</title>
+</head>
+<body>
+    <a href="./index.html">Powrot</a>
+    <form name="dane" method="post" enctype="text/plain" autocomplete="off">
+        <fieldset style="width: 300px;">
+            <legend>Dane osobowe</legend>
+            <table width="350">
+                <tr>
+                    <td><label for="imie">Imię:</label></td>
+                    <td><input type="text" name="imie" id="imie" maxlength="15" placeholder="max 15 znaków" autofocus="on"></td>
+                </tr>
+                <tr>
+                    <td><label for="nazwisko">Nazwisko:</label> </td>
+                    <td><input type="text" name="nazwisko" id="nazwisko" maxlength="30" placeholder="max 30 znaków"></td>
+                </tr>
+                <tr>
+                    <td><label for="data">Data urodzenia:</label> </td>
+                    <td><input type="date" name="data" id="data"></td>
+                </tr>
+                <tr>
+                    <td><label for="miejsce1">Miejsce urodzenia:</label> </td>
+                    <td>
+                        <input type="text" name="miejsce" list="miejsce" id="miejsce1">
+                    </td>
+                </tr>
+                    <datalist id="miejsce">
+                        <option>Opole</option>
+                        <option>Kluczbork</option>
+                        <option>Olesno</option>
+                        <option>Kędzieżyn-Koźle</option>
+                    </datalist>
+                <tr>
+                    <td><label for="email" >Email:</label></td>
+                    <td><input type="email" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="tele">Numer telefonu:</label></td>
+                    <td><input type="tel" id="tele" placeholder="000-000-000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset style="width: 500px;">
+            <legend>Pozostałe informacje</legend>
+            <table>
+                <tr>
+                    <td>Wykształcenie:</td>
+                    <td>
+                        <input type="radio" name="Wykształcenie" id="pods" value="podstawowe" checked><label for="pods">Podstawowe</label> 
+                        <input type="radio" name="Wykształcenie" id="śred" value="średnie"><label for="śred">Średnie</label> 
+                        <input type="radio" name="Wykształcenie" id="wyżs" value="wyższe"><label for="wyżs">Wyższe</label> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="zawod">Zawód:</label></td>
+                    <td>
+                        <select name="Zawód" id="zawod" size="1">
+                            <option value="Informatyk">Informatyk</option>
+                            <option value="Logistyk">Logistyk</option>
+                            <option value="Mechanik">Mechanik</option>
+                            <option value="Programista">Programista</option>
+                            <option value="Rolnik">Rolnik</option>
+                            <option value="Tokarz">Tokarz</option>
+                            <option value="Frezarz">Frezarz</option>
+                            <option value="Akrobata">Akrobata</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="opis">Dodatkowe informacje:</label> </td>
+                    <td>
+                        <textarea 
+                        name="opis" 
+                        id="opis" 
+                        cols="40" 
+                        rows="10" 
+                        maxlength="250"
+                        >Maksymalnie 250 znaków...
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Zainteresowania:</td>
+                    <td>
+                        <input type="checkbox" name="hobby" id="hob1" value="muzyka">
+                        <label for="hob1">Muzyka</label>
+                        <input type="checkbox" name="hobby" id="hob2" value="sport">
+                        <label for="hob2">Sport </label>
+                        <input type="checkbox" name="hobby" id="hob3" value="wendkowanie"  checked>
+                        <label for="hob3">Film</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <table>
+            <tr>
+                <td width="80"><input type="submit" value="Wyślij"></td>
+                <td><input type="reset" value="Wyczyść"></td>
+            </tr>
+        </table>
+        
+        
+    </form>
+</body>
+</html>
