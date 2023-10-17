@@ -1,0 +1,10 @@
+h1{
+    letter-spacing: 2px;
+    text-align: center;
+    
+    color: rgb(160, 255, 17);
+    text-shadow: 3px 3px 3px rgba(0, 128, 0, 0.466);
+}
+body{
+    background-color: blanchedalmond;
+}
