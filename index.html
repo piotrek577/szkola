@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularze, formularzyki i inne formsy</title>
+</head>
+<body>
+    <a href="./Gnacy_formularzDaneOsobowe.html">To drugie</a><br>
+    <a href="./index2.html">Nowe pola</a><br>
+    <a href="./patterny.html">Walidacja w html</a>
+    <form name="dane" method="post" enctype="text/plain" action="mailto:piotr.czaja@zslt.klucznet.pl?subject=A propo stron &body=tak">
+
+        Imię:
+        <input type="text" name="imie">
+        <br>
+        Nazwisko:
+        <input type="text" name="nazwisko">
+        <br>
+        Ulica:
+        <input type="text" name="ulica">
+        <br>
+        Kod pocztowy:
+        <input type="text" name="kod">
+        <br>
+        Miejscowość:
+        <input type="text" name="miejscowosc">
+        <br>
+        <input type="reset" value="Wyczyść">
+        <input type="submit" value="Wyślij"><br><br><br>
+
+    </form>
+    <form name="dane" method="post" enctype="text/plain" action="mailto:piotr.czaja@zslt.klucznet.pl?subject=A propo stron &body=tak">
+        <table>
+            <tr>
+                <td>Imię:</td>
+                <td><input type="text" name="imie" maxlength="16"></td>
+            </tr>
+            <tr>
+                <td>Nazwisko:</td>
+                <td><input type="text" name="nazwisko" maxlength="16"></td>
+            </tr>
+            <tr>
+                <td>Ulica:</td>
+                <td><input type="text" name="ulica" ></td>
+            </tr>
+            <tr>
+                <td>Kod pocztowy:</td>
+                <td><input type="text" name="kod" disabled></td>
+            </tr>
+            <tr>
+                <td>Miejscowość:</td>
+                <td><input type="text" name="miejscowosc" readonly value="Kluczbork"></td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="Wyczyść"></td>
+                <td><input type="submit" value="Wyślij"></td>
+            </tr>
+        </table> <br><br><br>
+        Wybierz płeć: <br>
+        <input type="radio" name="plec" id="" value="Kobieta">Kobieta <br>
+        <input type="radio" name="plec" id="" value="Menszczyzna" checked>Menszczyzna <br>
+        <br><br><br>
+        <fieldset style="width: 200px;">
+            <legend>Wybierz HOBBY:</legend>
+            <input type="checkbox" name="hobby" id="" value="muzyka"> Muzyka <br>
+            <input type="checkbox" name="hobby" id="" value="sport"> Sport <br>
+            <input type="checkbox" name="hobby" id="" value="wendkowanie"> Wendka <br>
+            <input type="checkbox" name="hobby" id="" value="koty"> Koty <br>
+            <input type="checkbox" name="hobby" id="" value="filmy"> Filmy <br>
+            <input type="checkbox" name="hobby" id="" value="jedzenie"> Jedzenie <br>
+        </fieldset>
+        <table width="200">
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Wybierz HOBBY:</legend>
+                        <input type="checkbox" name="hobby" id="" value="muzyka"> Muzyka <br>
+                        <input type="checkbox" name="hobby" id="" value="sport"> Sport <br>
+                        <input type="checkbox" name="hobby" id="" value="wendkowanie"> Wendka <br>
+                        <input type="checkbox" name="hobby" id="" value="koty"> Koty <br>
+                        <input type="checkbox" name="hobby" id="" value="filmy"> Filmy <br>
+                        <input type="checkbox" name="hobby" id="" value="jedzenie"> Jedzenie <br>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+        <br><br><br>
+
+        Wybierz województwo: <br>
+        <select name="wojewodztwo" id="" size="5" multiple>
+            <optgroup label="województwa">
+                <option value="opolskie">Opolskie</option>
+                <option value="mazowieckie">Mazowieckie</option>
+            </optgroup>
+            <optgroup label="też województwa">
+                <option value="podlaskie">Podlaskie</option>
+                <option value="zachodniopomorskie">Zachodniopomorskie</option>
+                <option value="śląskie">Śląskie</option>
+            </optgroup>
+        </select>
+        <br><br><br>
+        Opisz siebie: <br>
+        <textarea 
+            name="opis" 
+            id="" 
+            cols="30" 
+            rows="10" 
+            maxlength="50"
+        >Cześć, jestem...</textarea>
+        <br><br><br>
+        Wykształcenie:
+        <input type="text" name="szkola" list="listaszkola">
+        <datalist id="listaszkola">
+            <option>Podstawowe</option>
+            <option>Zawodowe</option>
+            <option>Średnie</option>
+            <option>Wyższe</option>
+        </datalist>
+    </form>
+</body>
+</html>

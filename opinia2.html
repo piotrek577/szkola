@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        width: 500px;
+        margin:0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3px;
+    }
+    .center{
+        text-align: center;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+</style>
+<body>
+    <form action="" method="post" enctype="text/plain">
+        <span  class="center">Wyraź opinię o naszej stronie</span>
+        <hr style="width: 100%; margin: auto auto; border: 1px solid black;">
+        <p>Wyraź opinię o naszej witrynie sieci web, naszych produktach, naszej organizacji oraz na dowolne inne tematy. Wszelkie komentarze i propozycje są mile widziane.</p>
+        <b>Jaki rodzaj komentarza chcesz wysłać?</b>
+        <div class="center"> 
+            <input type="radio" name="rodzajkom" id="rodzaj1"><label for="rodzaj1">Skarga</label>
+            <input type="radio" name="rodzajkom" id="rodzaj1"><label for="rodzaj1">Problem</label>
+            <input type="radio" name="rodzajkom" id="rodzaj3"><label for="rodzaj3">Propozycja</label>
+            <input type="radio" name="rodzajkom" id="rodzaj4" checked><label for="rodzaj4">Gratulacje</label>
+        </div>
+        <b>Co chcesz skomentować?</b>
+        <div class="center">
+            <select name="cokom" id="cokom">
+                <option value="witryna">Witryna sieci Web</option>
+                <option value="programiści">Nasz dział IT</option>
+                <option value="hosting">Nasz hosting</option>
+           </select>
+           <span>inne:</span>
+           <input type="text" name="cokominne" id="cokominne">
+        </div>
+        <b>Wprowadź swoje komentarze w miejscu poniżej:</b>
+        <textarea name="swoje" id="swoje" cols="30" rows="10" placeholder="Tu jest miejsce na twoje komentarze"></textarea>
+        <b>Poinformuj nas jak mamy się z tobą skontaktować:</b>
+        <div class="contact">
+            <label for="imie">Imię i nazwisko:</label>
+            <input type="text" name="imie" id="imie" placeholder="Jan Kowalski">
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="" id="email">
+
+            <label for="tele">Telefon:</label>
+            <input type="tel" id="tele" placeholder="000-000-000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+            
+            <label for="fax">Fax:</label>
+            <input type="tel" id="fax" placeholder="+00-000-000-000" pattern="^\+[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{3}$">
+        </div>
+        <div> 
+            <input type="checkbox" name="wazne" id="wazne"><span>Proszę o możliwie jak najszybszy kontakt w tej sprawie.</span>
+        </div>
+        <div>
+            <input type="submit" value="Wyślij komentarz">
+            <input type="reset" value="Wyczyść formularz">
+        </div>
+      
+
+    </form>
+</body>
+</html>

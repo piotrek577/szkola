@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dane osobowe</title>
+</head>
+<script type="text/javascript">
+    function ustawWartosc() {
+        var liczba = document.getElementById('zakres').value;
+        var text = document.getElementById('liczby').value = liczba;
+    }
+</script>
+<style>
+    form{
+        width: 400px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .minit{
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        gap: 5px;
+    }
+
+</style>
+<body>
+    <a href="./index.html">Powrot</a>
+    <form name="dane" method="post" enctype="text/plain" autocomplete="off">
+        <input type="tel" id="tele" maxlength="13" pattern="[0-9]{3}[0-9]{3}[0-9]{3}"><label for="tele">telefon </label> 
+        <input type="url" name="" id="link"><label for="link">link </label> 
+        <input type="email" name="" id="mail"><label for="mail">email</label>  
+        <input type="date" name="" id="data"><label for="data">data</label>  
+        <input type="time" name="" id="czas"><label for="czas">czas</label> 
+        <input type="month" name="" id="miesiąc"><label for="miesiąc">miesiąc</label>  
+        <input type="week" name="" id="tydzień"><label for="tydzień">tydzień</label>  
+        <input type="search" name="" id="wyszukaj"><label for="wyszukaj">wyszukaj</label> 
+        <input type="range" name="" id="zakres" min="1" max="20" onmousemove="ustawWartosc()">
+        <div class="minit">
+            <input type="number" name="liczby" id="liczby">
+            <label for="zakres">zakres </label> 
+        </div>
+        <input type="color" name="" id="kolor"><label for="kolor">kolor</label> 
+        <label><input type="reset" value="Reset" id="reset"></label>  
+        <label><input type="submit" value="Submit"></label>
+    </form>
+</body>
+</html>
