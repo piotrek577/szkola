@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+header{
+    color:rgb(0, 184, 0);
+}
+.content{
+    display: flex;
+    flex-direction: row;
+}
+header{
+    width: calc(100% - 40px);
+    padding: 20px;
+    background-color: lightgray;
+}
+article.szerszy{
+    width: calc(40%-40px);
+    padding: 20px;
+}
+article.drugi{
+    width: calc(30%-40px);
+    padding: 0%;
+
+}
+nav{
+    width: calc(30%-40px);
+    padding: 0px;
+}
+article.drugi p{
+    background-color: orange;
+    margin: 0%;
+    padding: 20px;
+    
+}
+nav p{
+    background-color:cornflowerblue;
+    margin: 0%;
+    padding: 20px;
+    
+}
+footer{
+    width: calc(100% - 40px);
+    padding: 10px 20px;
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
